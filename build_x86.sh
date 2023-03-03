@@ -60,7 +60,8 @@ make image PROFILE="generic" \
                      kmod-iwlwifi kmod-kvm-intel kmod-kvm-x86 \
                      kmod-kvm-amd kmod-tun kmod-usb-net-rtl8150 kmod-e100 \
                      \
-                     kmod-ath kmod-ath6kl kmod-ath6kl-usb kmod-ath9k kmod-ath9k-common kmod-ath9k-htc \
+                     kmod-ath kmod-ath6kl kmod-ath6kl-usb kmod-ath9k kmod-ath9k-common kmod-ath9k-htc kmod-alx \
+                     kmod-atl1 kmod-atl1c kmod-atl1e kmod-atl2 kmod-atm \
                      \
                      pciutils p54-pci-firmware p54-usb-firmware pciids \
                      \
