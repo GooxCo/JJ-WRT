@@ -66,7 +66,7 @@ make image PROFILE="generic" \
                      \
                      rs9113-firmware rt2800-pci-firmware rt61-pci-firmware rt73-usb-firmware \
                      rtl8188eu-firmware rtl8192ce-firmware rtl8192cu-firmware rtl8192de-firmware \
-                     rtl8192eu-firmware rtl8192se-firmware rtl8192su-firmware rtl8723au-firmware \
+                     rtl8192eu-firmware rtl8192se-firmware rtl8723au-firmware \
                      rtl8723bu-firmware rtl8821ae-firmware rtl8822be-firmware rtl8822ce-firmware \
                      \
                      kmod-hermes kmod-hermes-pci kmod-hfcmulti kmod-hfcpci kmod-hid kmod-hid-generic \
