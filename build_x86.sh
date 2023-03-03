@@ -37,7 +37,7 @@ make image PROFILE="generic" \
                      nano git-http jq gawk getopt openssl-util parted perl-http-date perlbase-file perlbase-getopt \
                      btrfs-progs busybox bzip2 cgi-io chattr comgt comgt-ncm containerd coremark \
                      urngd usign coreutils coreutils-base64 coreutils-nohup coreutils-stat coreutils-truncate  \
-                     dropbear hostapd-common hostapd-utils iconv iw iwinfo jshn  \
+                     dropbear hostapd-common hostapd-utils iconv iwinfo jshn  \
                      zlib wireless-regdb f2fsck libjson-script perlbase-time perlbase-unicode perlbase-utf8 pigz ppp \
                      tini ttyd tune2fs uclient-fetch uhttpd uhttpd-mod-ubus unzip uqmi usb-modeswitch \
                      wwan xfs-fsck xfs-mkfs xz xz-utils ziptool zoneinfo-asia zoneinfo-core zstd \
