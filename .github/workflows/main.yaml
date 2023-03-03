@@ -1,9 +1,5 @@
 name: Build OpenWRT Images
-on:
-  repository_dispatch:
-  workflow_dispatch:
-#  schedule:
-#    - cron: 0 */18 * * *
+on:[push]
 jobs:
     build:
         name: Prepare and build OpenWRT images
