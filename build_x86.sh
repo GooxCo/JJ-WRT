@@ -3,7 +3,7 @@
 OUTPUT="$(pwd)/images"
 BUILD_VERSION="22.03.3"
 BUILDER="https://downloads.openwrt.org/releases/${BUILD_VERSION}/targets/x86/64/openwrt-imagebuilder-${BUILD_VERSION}-x86-64.Linux-x86_64.tar.xz"
-KERNEL_PARTSIZE=500 #Kernel-Partitionsize in MB
+KERNEL_PARTSIZE=200 #Kernel-Partitionsize in MB
 ROOTFS_PARTSIZE=3096 #Rootfs-Partitionsize in MB
 BASEDIR=$(realpath "$0" | xargs dirname)
 
@@ -47,6 +47,16 @@ make image PROFILE="generic" \
                      \
                      php8 php8-cgi php8-mod-ctype php8-mod-fileinfo php8-mod-gettext php8-mod-gmp php8-mod-iconv php8-mod-mbstring php8-mod-pcntl php8-mod-session php8-mod-zip \
                      netdata luci-app-vnstat2 luci-app-opkg ca-certificates \
+                     \
+                     iw-full iwinfo iwl3945-firmware iwl4965-firmware iwlwifi-firmware-iwl100 \
+                     iwlwifi-firmware-iwl1000 iwlwifi-firmware-iwl105 iwlwifi-firmware-iwl135 \
+                     iwlwifi-firmware-iwl2000 iwlwifi-firmware-iwl2030 iwlwifi-firmware-iwl3160 iwlwifi-firmware-iwl3168 iwlwifi-firmware-iwl5000 iwlwifi-firmware-iwl5150 \
+                     iwlwifi-firmware-iwl6000g2 iwlwifi-firmware-iwl6000g2a iwlwifi-firmware-iwl6000g2b iwlwifi-firmware-iwl6050 \
+                     iwlwifi-firmware-iwl7260 iwlwifi-firmware-iwl7265 iwlwifi-firmware-iwl7265d iwlwifi-firmware-iwl8260c iwlwifi-firmware-iwl8265 iwlwifi-firmware-iwl9000 iwlwifi-firmware-iwl9260 \
+                     \
+                     kmod-iwl-legacy kmod-iwl3945 kmod-iwl4965 \
+                     kmod-iwlwifi kmod-kvm-intel kmod-kvm-x86 \
+                     kmod-kvm-amd kmod-tun kmod-usb-net-rtl8150 \
                      \
                      kmod-usb-wdm kmod-usb-net-ipheth kmod-usb-net-asix-ax88179 \
                      kmod-crypto-acompress kmod-crypto-crc32c kmod-crypto-hash kmod-fs-btrfs \
