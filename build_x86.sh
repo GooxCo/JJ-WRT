@@ -37,7 +37,7 @@ make image PROFILE="generic" \
                      nano git-http jq gawk getopt openssl-util parted perl-http-date perlbase-file perlbase-getopt \
                      btrfs-progs busybox bzip2 cgi-io chattr comgt comgt-ncm containerd coremark \
                      urngd usign coreutils coreutils-base64 coreutils-nohup coreutils-stat coreutils-truncate  \
-                     dropbear hostapd-common hostapd-utils iconv iwinfo jshn  \
+                     dropbear hostapd-common hostapd-utils iconv iw iwinfo jshn  \
                      zlib wireless-regdb f2fsck libjson-script perlbase-time perlbase-unicode perlbase-utf8 pigz ppp \
                      tini ttyd tune2fs uclient-fetch uhttpd uhttpd-mod-ubus unzip uqmi usb-modeswitch \
                      wwan xfs-fsck xfs-mkfs xz xz-utils ziptool zoneinfo-asia zoneinfo-core zstd \
@@ -45,7 +45,9 @@ make image PROFILE="generic" \
                      luci luci-base luci-compat luci-lib-base luci-lib-ip luci-lib-ipkg luci-lib-jsonc luci-lib-nixio \
                      luci-mod-network luci-mod-system luci-proto-ipv6 luci-proto-ppp \
                      \
-                     php8 php8-cgi php8-mod-ctype php8-mod-fileinfo php8-mod-gettext php8-mod-gmp php8-mod-iconv php8-mod-mbstring php8-mod-pcntl php8-mod-session php8-mod-zip \
+                     php8 php8-cgi php8-mod-ctype php8-mod-fileinfo php8-mod-gettext php8-mod-gmp php8-mod-iconv php8-mod-mbstring php8-mod-pcntl php8-mod-session php8-mod-zip php8-mod-curl php8-mod-dom \
+                     php8-mod-filter php8-mod-opcache php8-mod-pdo\
+                     \
                      netdata luci-app-vnstat2 luci-app-opkg ca-certificates \
                      \
                      iw-full iwinfo iwl3945-firmware iwl4965-firmware iwlwifi-firmware-iwl100 \
@@ -56,9 +58,20 @@ make image PROFILE="generic" \
                      \
                      kmod-iwl-legacy kmod-iwl3945 kmod-iwl4965 \
                      kmod-iwlwifi kmod-kvm-intel kmod-kvm-x86 \
-                     kmod-kvm-amd kmod-tun kmod-usb-net-rtl8150 \
+                     kmod-kvm-amd kmod-tun kmod-usb-net-rtl8150 kmod-e100 \
                      \
-                     kmod-usb-wdm kmod-usb-net-ipheth kmod-usb-net-asix-ax88179 \
+                     kmod-ath kmod-ath6kl kmod-ath6kl-usb kmod-ath9k kmod-ath9k-common kmod-ath9k-htc \
+                     \
+                     pciutils p54-pci-firmware p54-usb-firmware pciids \
+                     \
+                     rs9113-firmware rt2800-pci-firmware rt61-pci-firmware rt73-usb-firmware \
+                     rtl8188eu-firmware rtl8192ce-firmware rtl8192cu-firmware rtl8192de-firmware \
+                     rtl8192eu-firmware rtl8192se-firmware rtl8192su-firmware rtl8723au-firmware \
+                     rtl8723bu-firmware rtl8821ae-firmware rtl8822be-firmware rtl8822ce-firmware \
+                     \
+                     kmod-hermes kmod-hermes-pci kmod-hfcmulti kmod-hfcpci kmod-hid kmod-hid-generic \
+                     \
+                     kmod-usb-wdm kmod-brcmsmac kmod-usb-net-ipheth kmod-usb-net-asix-ax88179 \
                      kmod-crypto-acompress kmod-crypto-crc32c kmod-crypto-hash kmod-fs-btrfs \
                      kmod-usb-net-rndis kmod-usb-net-cdc-ncm kmod-usb-net-cdc-eem kmod-usb-net-cdc-subset \
                      kmod-usb-net-cdc-ether kmod-rtl8xxxu kmod-rtl8187 kmod-nft-tproxy \
