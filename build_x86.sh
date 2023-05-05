@@ -1,9 +1,9 @@
 #!/bin/bash
 
 OUTPUT="$(pwd)/images"
-BUILD_VERSION="22.03.4"
+BUILD_VERSION="22.03.5"
 BUILDER="https://downloads.openwrt.org/releases/${BUILD_VERSION}/targets/x86/64/openwrt-imagebuilder-${BUILD_VERSION}-x86-64.Linux-x86_64.tar.xz"
-KERNEL_PARTSIZE=200 #Kernel-Partitionsize in MB
+KERNEL_PARTSIZE=256 #Kernel-Partitionsize in MB
 ROOTFS_PARTSIZE=3096 #Rootfs-Partitionsize in MB
 BASEDIR=$(realpath "$0" | xargs dirname)
 
